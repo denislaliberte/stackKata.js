@@ -35,9 +35,9 @@ describe("Stack", function() {
     }
   );
   it("return the secon item", function() {
-    stack.push(3);
-    stack.push(2);
-    expect(stack.pop()).toEqual(2);
+    newStack = immutableStack.push(3);
+    newStack = newStack.push(2);
+    expect(newStack.peek()).toEqual(2);
     }
   );
   it("return pop two item", function() {
