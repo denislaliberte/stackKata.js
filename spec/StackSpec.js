@@ -10,8 +10,8 @@ describe("Stack", function() {
     }
   );
   it("Stack with one item count should return 1", function() {
-    stack.push(3);
-    expect(stack.count()).toEqual(1);
+    newStack = immutableStack.push(3);
+    expect(newStack.count()).toEqual(1);
     }
   );
   it("Incremente count when new item are added", function() {
