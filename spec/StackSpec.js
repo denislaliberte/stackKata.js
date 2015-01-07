@@ -1,13 +1,13 @@
 describe("Stack", function() {
-  it("New stack size should return 0", function() {
+  it("New stack count should return 0", function() {
     stack = new Stack();
-    expect(stack.size()).toEqual(0);
+    expect(stack.count).toEqual(0);
     }
   );
-  it("Stack with one item size should return 1", function() {
+  it("Stack with one item count should return 1", function() {
     stack = new Stack();
-    stack.add(3);
-    expect(stack.size()).toEqual(1);
+    stack.push(3);
+    expect(stack.count).toEqual(1);
     }
   );
 });
