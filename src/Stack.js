@@ -1,23 +1,27 @@
 function Stack() {
-  this.count = 0;
+  var count = 0;
   this.item = [];
 
+  this.count = function() {
+    return count;
+  }
+
   this.push = function(item) {
-    this.count++;
-    this.item[this.count] = item;
+    count++;
+    this.item[count] = item;
   }
 
   this.pop = function() {
     temp = this.peek();
-    this.count--;
+    count--;
     return temp;
   }
 
   this.peek = function() {
-    if(this.count ==0) {
+    if(count ==0) {
       throw new Error("Empty stack");
     }
-    return this.item[this.count];
+    return this.item[count];
   }
 
 }
