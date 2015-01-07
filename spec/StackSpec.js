@@ -10,4 +10,21 @@ describe("Stack", function() {
     expect(stack.count).toEqual(1);
     }
   );
+  it("Incremente count when new item are added", function() {
+    stack = new Stack();
+    stack.push(3);
+    stack.push(2);
+    stack.push(1);
+    expect(stack.count).toEqual(3);
+    }
+  );
+  it("Decremente count when item are removed", function() {
+    stack = new Stack();
+    stack.push(3);
+    stack.push(2);
+    stack.push(1);
+    stack.pop(1);
+    expect(stack.count).toEqual(2);
+    }
+  );
 });
