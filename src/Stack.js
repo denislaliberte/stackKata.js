@@ -43,9 +43,11 @@ function ImmutableStack(items,count) {
   }
 
   this.pop = function() {
-    temp = this.peek();
-    count--;
-    return temp;
+    if(count ==0) {
+      throw new Error("Empty stack");
+    }
+    newCount = count -1
+    return new ImmutableStack(item,newCount);
   }
 
   this.peek = function() {

@@ -22,11 +22,11 @@ describe("Stack", function() {
     }
   );
   it("Decremente count when item are removed", function() {
-    stack.push(3);
-    stack.push(2);
-    stack.push(1);
-    stack.pop(1);
-    expect(stack.count()).toEqual(2);
+    newStack = immutableStack.push(3);
+    newStack = newStack.push(2);
+    newStack = newStack.push(1);
+    newStack = newStack.pop();
+    expect(newStack.count()).toEqual(2);
     }
   );
   it("return the first item", function() {
