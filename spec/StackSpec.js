@@ -40,4 +40,12 @@ describe("Stack", function() {
     expect(stack.pop()).toEqual(2);
     }
   );
+  it("return pop two item", function() {
+    stack = new Stack();
+    stack.push(3);
+    stack.push(2);
+    expect(stack.pop()).toEqual(2);
+    expect(stack.pop()).toEqual(3);
+    }
+  );
 });
