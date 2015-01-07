@@ -56,11 +56,11 @@ describe("Stack", function() {
     }
   );
   it("cant pop on empty stack", function() {
-    expect(function() { stack.pop(); }).toThrow(new Error("Empty stack"));
+    expect(function() { immutableStack.pop(); }).toThrow(new Error("Empty stack"));
     }
   );
   it("cant peek on empty stack", function() {
-    expect(function() { stack.peek(); }).toThrow(new Error("Empty stack"));
+    expect(function() { immutableStack.peek(); }).toThrow(new Error("Empty stack"));
     }
   );
 });
