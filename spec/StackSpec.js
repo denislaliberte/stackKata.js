@@ -15,10 +15,10 @@ describe("Stack", function() {
     }
   );
   it("Incremente count when new item are added", function() {
-    stack.push(3);
-    stack.push(2);
-    stack.push(1);
-    expect(stack.count()).toEqual(3);
+    newStack = immutableStack.push(3);
+    newStack = newStack.push(2);
+    newStack = newStack.push(1);
+    expect(newStack.count()).toEqual(3);
     }
   );
   it("Decremente count when item are removed", function() {
