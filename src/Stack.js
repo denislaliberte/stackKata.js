@@ -7,9 +7,9 @@ function ImmutableStack(items,count) {
     return count;
   }
 
-  this.push = function(newItem) {
+  this.push = function(item) {
     newItems = items;
-    newItems[count + 1] = newItem;
+    newItems[count + 1] = item;
     return new ImmutableStack(newItems, count + 1);
   }
 
