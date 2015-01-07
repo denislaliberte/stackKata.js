@@ -1,4 +1,3 @@
-
 function Stack() {
   this.count = 0;
   this.item = [];
@@ -9,6 +8,9 @@ function Stack() {
   }
 
   this.pop = function() {
+    if(this.count ==0) {
+      throw new Error("Empty stack");
+    }
     temp = this.item[this.count];
     this.count--;
     return temp;
