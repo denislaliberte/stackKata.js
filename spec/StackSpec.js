@@ -27,4 +27,10 @@ describe("Stack", function() {
     expect(stack.count).toEqual(2);
     }
   );
+  it("return the first item", function() {
+    stack = new Stack();
+    stack.push(3);
+    expect(stack.pop()).toEqual(3);
+    }
+  );
 });
