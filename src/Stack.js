@@ -1,7 +1,7 @@
 
 function Stack() {
   this.count = 0;
-  this.item = new Array();
+  this.item = [];
   this.push = function(item) {
     this.count++;
     this.item[this.count] = item;
