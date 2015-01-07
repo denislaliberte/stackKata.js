@@ -6,7 +6,7 @@ describe("Stack", function() {
     }
   );
   it("New stack count should return 0", function() {
-    expect(stack.count()).toEqual(0);
+    expect(immutableStack.count()).toEqual(0);
     }
   );
   it("Stack with one item count should return 1", function() {
