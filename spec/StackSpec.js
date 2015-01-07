@@ -49,10 +49,10 @@ describe("Stack", function() {
     }
   );
   it("peek last item", function() {
-    stack.push(3);
-    stack.push(2);
-    expect(stack.peek()).toEqual(2);
-    expect(stack.peek()).toEqual(2);
+    newStack = immutableStack.push(3);
+    newStack = newStack.push(2);
+    expect(newStack.peek()).toEqual(2);
+    expect(newStack.peek()).toEqual(2);
     }
   );
   it("cant pop on empty stack", function() {
