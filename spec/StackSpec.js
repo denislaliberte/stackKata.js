@@ -48,4 +48,12 @@ describe("Stack", function() {
     expect(stack.pop()).toEqual(3);
     }
   );
+  it("peek last item", function() {
+    stack = new Stack();
+    stack.push(3);
+    stack.push(2);
+    expect(stack.peek()).toEqual(2);
+    expect(stack.peek()).toEqual(2);
+    }
+  );
 });
