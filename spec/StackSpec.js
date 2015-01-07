@@ -33,4 +33,11 @@ describe("Stack", function() {
     expect(stack.pop()).toEqual(3);
     }
   );
+  it("return the secon item", function() {
+    stack = new Stack();
+    stack.push(3);
+    stack.push(2);
+    expect(stack.pop()).toEqual(2);
+    }
+  );
 });
