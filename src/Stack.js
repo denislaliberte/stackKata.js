@@ -36,18 +36,16 @@ function ImmutableStack(items,count) {
   }
 
   this.push = function(newItem) {
-    newCount = count +1;
     newItems = item;
-    newItems[newCount] = newItem;
-    return new ImmutableStack(newItems,newCount);
+    newItems[count + 1] = newItem;
+    return new ImmutableStack(newItems, count + 1);
   }
 
   this.pop = function() {
     if(count ==0) {
       throw new Error("Empty stack");
     }
-    newCount = count -1
-    return new ImmutableStack(item,newCount);
+    return new ImmutableStack(item, count - 1);
   }
 
   this.peek = function() {

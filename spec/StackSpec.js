@@ -41,10 +41,11 @@ describe("Stack", function() {
     }
   );
   it("return pop two item", function() {
-    stack.push(3);
-    stack.push(2);
-    expect(stack.pop()).toEqual(2);
-    expect(stack.pop()).toEqual(3);
+    newStack = immutableStack.push(3);
+    newStack = newStack.push(2);
+    expect(newStack.peek()).toEqual(2);
+    newStack = newStack.pop();
+    expect(newStack.peek()).toEqual(3);
     }
   );
   it("peek last item", function() {
