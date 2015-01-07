@@ -1,7 +1,4 @@
-#Roman Number Kata
+# Stack kata
 
-I use this classic exercice to practice javascript and learn to use the Jasmine
-sepc suite.
-
-http://codingdojo.org/cgi-bin/index.pl?KataRomanNumerals
-http://agilekatas.co.uk/katas/romannumerals-kata.html
+[Integer stack - TDD Problems](https://sites.google.com/site/tddproblems/all-problems-1/Integer-stack)
+[The Clean Coder: Craftsman 63: Specifics and Generics.](http://thecleancoder.blogspot.ca/2010/11/craftsman-63-specifics-and-generics.html)
