@@ -1,7 +1,6 @@
 describe("Stack", function() {
   var stack;
   beforeEach(function(){
-      stack = new Stack();
       immutableStack = new ImmutableStack;
     }
   );
