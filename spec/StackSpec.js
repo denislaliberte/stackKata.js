@@ -30,8 +30,8 @@ describe("Stack", function() {
     }
   );
   it("return the first item", function() {
-    stack.push(3);
-    expect(stack.pop()).toEqual(3);
+    newStack = immutableStack.push(3);
+    expect(newStack.peek()).toEqual(3);
     }
   );
   it("return the secon item", function() {
