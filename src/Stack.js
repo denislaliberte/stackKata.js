@@ -1,14 +1,14 @@
 function Stack() {
   var count = 0;
-  this.item = [];
+  var item = [];
 
   this.count = function() {
     return count;
   }
 
-  this.push = function(item) {
+  this.push = function(newItem) {
     count++;
-    this.item[count] = item;
+    item[count] = newItem;
   }
 
   this.pop = function() {
@@ -21,7 +21,7 @@ function Stack() {
     if(count ==0) {
       throw new Error("Empty stack");
     }
-    return this.item[count];
+    return item[count];
   }
 
 }
