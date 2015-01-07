@@ -8,15 +8,15 @@ function Stack() {
   }
 
   this.pop = function() {
-    if(this.count ==0) {
-      throw new Error("Empty stack");
-    }
-    temp = this.item[this.count];
+    temp = this.peek();
     this.count--;
     return temp;
   }
 
   this.peek = function() {
+    if(this.count ==0) {
+      throw new Error("Empty stack");
+    }
     return this.item[this.count];
   }
 

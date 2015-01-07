@@ -61,4 +61,9 @@ describe("Stack", function() {
     expect(function() { stack.pop(); }).toThrow(new Error("Empty stack"));
     }
   );
+  it("cant peek on empty stack", function() {
+    stack = new Stack();
+    expect(function() { stack.peek(); }).toThrow(new Error("Empty stack"));
+    }
+  );
 });
